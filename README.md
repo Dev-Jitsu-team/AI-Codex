@@ -1,4 +1,4 @@
-# .ai
+# .ai (Dev_v0.1)
 
 This folder contains AI-assisted development tools for improving code quality and consistency.
 

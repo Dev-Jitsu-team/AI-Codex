@@ -1,0 +1,6 @@
+run = "Cursor IDE SSH"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "Cursor IDE SSH"]
