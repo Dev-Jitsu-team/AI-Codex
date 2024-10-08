@@ -1,75 +1,75 @@
 # AI Codex
 
-## Usage
+## Usage (사용법)
 
-- Review: @codex.md (silent load, no output)
-- Update: @learn.md
-- File paths: Always use absolute paths from project root
+- 검토: @codex.md (무음 로드, 출력 없음)
+- 업데이트: @learn.md
+- 파일 경로: 항상 프로젝트 루트에서 절대 경로 사용
 
-## Errors
+## Errors (오류)
 
 E000:
 
-- Context: [Relevant project area or file]
-- Error: [Precise description]
-- Correction: [Exact fix]
-- Prevention: [Specific strategy]
-- Related: [IDs of related errors/learnings]
+- 컨텍스트: [관련 프로젝트 영역 또는 파일]
+- 오류: [정확한 설명]
+- 수정: [정확한 해결 방법]
+- 예방: [구체적인 전략]
+- 관련: [관련 오류/학습 ID]
 
 E001:
 
-- Context: File path suggestions
-- Error: Relative path used instead of absolute
-- Correction: Use absolute paths from project root
-- Prevention: Always prefix paths with '/'
-- Related: None
+- 컨텍스트: 파일 경로 제안
+- 오류: 절대 경로 대신 상대 경로 사용
+- 수정: 프로젝트 루트에서 절대 경로 사용
+- 예방: 항상 경로 앞에 '/' 붙이기
+- 관련: 없음
 
 E002:
 
-- Context: '/src/index.ts'
-- Error: Suggested CommonJS import syntax
-- Correction: Use ES module import syntax
-- Prevention: Verify `"type": "module"` in '/package.json' or '.mjs' extension
-- Related: L002
+- 컨텍스트: '/src/index.ts'
+- 오류: 제안된 CommonJS 임포트 구문
+- 수정: ES 모듈 임포트 구문 사용
+- 예방: '/package.json' 또는 '.mjs' 확장자를 확인하여 `"type": "module"`이 설정되어 있는지 확인
+- 관련: L002
 
-## Learnings
+## Learnings (학습 사항)
 
 L007:
 
-- Context: /apps/www/src/pro/components/user-dropdown.tsx
-- Insight: UserDropdown component uses useLogout hook and handles loading state
-- Application: Implement logout functionality with loading indicator in user-related components
-- Impact: Improved user experience with visual feedback during logout process
-- Related: L008, L005
+- 컨텍스트: /apps/www/src/pro/components/user-dropdown.tsx
+- 인사이트: UserDropdown 컴포넌트가 useLogout 훅을 사용하고 로딩 상태를 처리함
+- 적용: 사용자 관련 컴포넌트에서 로딩 표시기가 있는 로그아웃 기능 구현
+- 영향: 로그아웃 과정 중 시각적 피드백으로 사용자 경험 개선
+- 관련: L008, L005
 
 L008:
 
-- Context: /apps/www/src/pro/components/user-dropdown.tsx
-- Insight: Component uses 'use client' directive for client-side rendering
-- Application: Use 'use client' directive for components that require client-side interactivity
-- Impact: Proper integration with Next.js 13+ server components architecture
-- Related: L007
+- 컨텍스트: /apps/www/src/pro/components/user-dropdown.tsx
+- 인사이트: 컴포넌트가 'use client' 지시자를 사용하여 클라이언트 측 렌더링을 처리함
+- 적용: 클라이언트 측 상호작용이 필요한 컴포넌트에 'use client' 지시자를 사용
+- 영향: Next.js 13+ 서버 컴포넌트 아키텍처와 적절한 통합
+- 관련: L007
 
 L000:
 
-- Context: [Relevant project area or file]
-- Insight: [Concise description]
-- Application: [How to apply this knowledge]
-- Impact: [Potential effects on project]
-- Related: [IDs of related errors/learnings]
+- 컨텍스트: [관련 프로젝트 영역 또는 파일]
+- 인사이트: [간결한 설명]
+- 적용: [이 지식을 어떻게 적용할 것인가]
+- 영향: [프로젝트에 미치는 영향]
+- 관련: [관련 오류/학습 ID]
 
 L001:
 
-- Context: @codex.md usage
-- Insight: @codex.md is for context, not for direct modification
-- Application: Use @codex.md for silent loading and context only; execute subsequent commands separately
-- Impact: Improved accuracy in responding to user intentions
-- Related: None
+- 컨텍스트: @codex.md 사용법
+- 인사이트: @codex.md는 컨텍스트를 제공하는 데 사용되며 직접 수정하는 데 사용되지 않음
+- 적용: @codex.md를 무음 로드와 컨텍스트 제공에만 사용; 이후 명령을 별도로 실행
+- 영향: 사용자의 의도에 대한 정확한 응답
+- 관련: 없음
 
 L002:
 
-- Context: Project architecture
-- Insight: Repository pattern for data access
-- Application: '/src' is root, '/src/auth' for authentication, '/src/database' for data access
-- Impact: Organized code structure, separation of concerns
-- Related: None
+- 컨텍스트: 프로젝트 아키텍처
+- 인사이트: 데이터 액세스에 대한 저장소 패턴
+- 적용: '/src'는 루트, '/src/auth'는 인증, '/src/database'는 데이터 액세스
+- 영향: 코드 구조의 일관성, 관심사 분리
+- 관련: 없음
